@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solucionador de Simplex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-box">
+            <h1>Solucionador de Simplex</h1>
+            <form id="simplexForm">
+                <div class="input-group">
+                    <input type="text" id="objective" placeholder="Función Objetivo (Ej: 5x1 + 3x2)" required>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="constraints" rows="4" placeholder="Restricciones (Ej: 2x1 + 4x2 ≤ 10&#10;x1 + 3x2 ≥ 5)" required></textarea>
+                </div>
+
+                <div class="input-group select-group">
+                    <label for="type">Tipo de optimización</label>
+                    <select id="type">
+                        <option value="max">Maximizar</option>
+                        <option value="min">Minimizar</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Resolver</button>
+            </form>
+
+            <div id="results" class="hidden">
+                <h2>Resultados</h2>
+                <pre id="solutionSteps"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="simplex.js"></script>
+</body>
+</html>
