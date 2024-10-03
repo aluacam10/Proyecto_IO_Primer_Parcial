@@ -19,7 +19,11 @@ Intrucciones:
 4.-Pulsar boton Resolver
 
 Nombres de los Integrantes:
+
 -Erick M. Rodriguez del Angel
+
 -David C Lopez Gonzalez
+
 -Raul R Mena Tzel
+
 -Felipe A Yan Santos
